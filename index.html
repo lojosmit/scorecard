@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="score-screen">
+                    <h1 class="score font" id="home-score">0</h1>
+                </div>
+                <div class="actions-container"> 
+                    <div onclick="calcScores('home',1)" class="action-item font"><a >+1</a></div>
+                    <div onclick="calcScores('home',2)" class="action-item font"><a >+2</a></div>
+                    <div onclick="calcScores('home',3)"class="action-item font"><a >+3</a></div>
+                </div>
+            </div>
+            <div>
+                <h1>OPTIONS</h1>
+                <div class="options-container"> 
+                    <div class="option-item" id="new-game"><button onclick="resetGame()">New Game</button></div>
+                    <div class="option-item" id="restart"><button onclick="resetGame()">Restart</button></div>
+                    
+                </div>
+                
+                <h2 class="timer-title">Game Time Left: </h2>
+                <h2 id="game-timer" class="game-timer"></h2>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score-screen">
+                    <h1 class="score font" id="guest-score">0</h1>
+                </div>
+                <div class="actions-container">
+                    <div onclick="calcScores('guest',1)" class="action-item font"><a >+1</a></div>
+                    <div onclick="calcScores('guest',2)" class="action-item font"><a >+2</a></div>
+                    <div onclick="calcScores('guest',3)"class="action-item font"><a >+3</a></div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html> 
